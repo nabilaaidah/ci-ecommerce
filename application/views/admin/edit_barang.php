@@ -13,7 +13,14 @@
             </div>
             <div class="form-group">
                 <label for="kat">Kategori</label>
-            
+            	<select class="form-control" name="kategori">
+                    <option <?php if ($brg->kategori == 'Buku Fiksi') echo 'selected'; ?>> Buku Fiksi</option>
+                    <option <?php if ($brg->kategori == 'Buku Non Fiksi') echo 'selected'; ?>> Buku Non Fiksi</option>
+                    <option <?php if ($brg->kategori == 'Komik') echo 'selected'; ?>> Komik</option>
+                    <option <?php if ($brg->kategori == 'Buku Anak') echo 'selected'; ?>> Buku Anak</option>
+                    <option <?php if ($brg->kategori == 'Peralatan Tulis') echo 'selected'; ?>> Peralatan Tulis</option>>
+                    
+                </select>
             </div>
             <div class="form-group">
                 <label for="harga">Harga</label>
