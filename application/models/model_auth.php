@@ -9,11 +9,11 @@
                                 ->where('password',$pass)
                                 ->limit(1)
                                 ->get('tb_user');
-            if($result->num_rows()>0){
+
+            if($result->num_rows()>0) {
                 return $result->row();
-            }else{
-                return array();
             }
+            else return array();
         }
     }
 ?>
